@@ -2,7 +2,7 @@
 A command line tool that monitors folder tree and executes configurable commands based on file modification type and file glob.
 It depends on the [fireworm package](https://github.com/airportyh/fireworm)
 
-### Usage:
+## Usage:
 **smartwatch [a|c|r|s] [glob] [command]**
 
 Options:
@@ -27,9 +27,9 @@ Options:
 
 Multiple acrs/glob/command sets can be defined by adding additional parameters
 
-####Example:
+### Example:
 
-smartwatch acr src/\*\*/*.jade "jade -P #{path} -o build#{rel}"
+smartwatch acr src/\*\*/\*.jade "jade -P #{path} -o build#{rel}"
 
 This command will monitor the 'src' folder and compile all jade templates into the build folder, retaining the original folder structure.
 
@@ -47,10 +47,10 @@ Smartwatch can be used for:
 Sample package.json using [parallelshell](https://github.com/keithamus/parallelshell):
 
 "scripts": {  
-  "watch:jade": "smartwatch acs src/\*\*/\*.jade \"jade -P #{path} -o build#{rel}\"",  
-  "watch:coffee": "smartwatch acs src/\*\*/\*.coffee \"coffee --compile --map -o build#{rel} #{path}\"",  
-  "watch:sass": "smartwatch acs src/\*\*/\*.sass \"node-sass #{path} build#{rel}\"",  
-  "watch:spec": "smartwatch ac test/\*\*/\*.js mocha",  
+  "watch:jade": "smartwatch acs src/\*\*/\*.jade \"jade -P #{path} -o build#{rel}\""  
+  "watch:coffee": "smartwatch acs src/*\*/\*.coffee \"coffee --compile --map -o build#{rel} #{path}\""  
+  "watch:sass": "smartwatch acs src/\*\*/\*.sass \"node-sass #{path} build#{rel}\""  
+  "watch:spec": "smartwatch ac test/\*\*/\*.js mocha"  
   "watch:all": "paralellshell 'npm run watch:jade' 'npm run watch:coffee' 'npm run watch:sass' 'npm run watch:spec'"  
 },
 

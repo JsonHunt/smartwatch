@@ -1,7 +1,7 @@
 {
   "name": "smartwatch",
-  "version": "1.0.0",
-  "description": "CLI to monitor filesystem and run commands with parameters",
+  "version": "1.0.2",
+  "description": "CLI to monitor folder tree for file changes and run commands with file-related parameters",
   "main": "index.js",
   "scripts": {
     "test": "test"
