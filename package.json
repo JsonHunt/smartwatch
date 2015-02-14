@@ -1,0 +1,47 @@
+{
+  "name": "smartwatch",
+  "version": "1.0.0",
+  "description": "CLI to monitor filesystem and run commands with parameters",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "bin": {
+    "smartwatch": "./bin/smartwatch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JsonHunt/smartwatch.git"
+  },
+  "keywords": [
+    "monitor",
+    "watch",
+    "watcher",
+    "filesystem",
+    "file",
+    "folder",
+    "directory",
+    "add",
+    "edit",
+    "modify",
+    "delete",
+    "remove",
+    "update",
+    "command",
+    "parameters",
+    "cli",
+    "glob",
+    "filename"
+  ],
+  "author": "Json Hunt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JsonHunt/smartwatch/issues"
+  },
+  "homepage": "https://github.com/JsonHunt/smartwatch",
+  "dependencies": {
+    "fireworm": "^0.6.6",
+    "string": "^3.0.0",
+    "xdate": "^0.8.0"
+  }
+}
