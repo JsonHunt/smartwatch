@@ -1,6 +1,6 @@
 {
   "name": "smartwatch",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "CLI to monitor folder tree for file changes and run commands with file-related parameters",
   "main": "index.js",
   "scripts": {

@@ -47,11 +47,11 @@ Smartwatch can be used for:
 Sample package.json using [parallelshell](https://github.com/keithamus/parallelshell):
 
 "scripts": {  
-  "watch:jade": "smartwatch acs src/\*\*/\*.jade \"jade -P #{path} -o build#{rel}\""  
-  "watch:coffee": "smartwatch acs src/*\*/\*.coffee \"coffee --compile --map -o build#{rel} #{path}\""  
-  "watch:sass": "smartwatch acs src/\*\*/\*.sass \"node-sass #{path} build#{rel}\""  
-  "watch:spec": "smartwatch ac test/\*\*/\*.js mocha"  
-  "watch:all": "paralellshell 'npm run watch:jade' 'npm run watch:coffee' 'npm run watch:sass' 'npm run watch:spec'"  
+  "watch:jade": "smartwatch acs src/\*\*/\*.jade \"jade -P #{path} -o build#{rel}\"",  
+  "watch:coffee": "smartwatch acs src/*\*/\*.coffee \"coffee --compile --map -o build#{rel} #{path}\"",  
+  "watch:sass": "smartwatch acs src/\*\*/\*.sass \"node-sass #{path} build#{rel}\"",  
+  "watch:spec": "smartwatch ac test/\*\*/\*.js mocha",  
+  "watch:all": "parallelshell \"npm run watch:jade\" \"npm run watch:coffee\" \"npm run watch:sass\" \"npm run watch:spec\""  
 },
 
 Now execute "npm run watch:all" to start all your watchers
